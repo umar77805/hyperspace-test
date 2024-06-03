@@ -1,5 +1,5 @@
+import Background from "@/components/background";
 import "./globals.css";
-
 
 export default function RootLayout({
   children,
@@ -8,7 +8,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="flex justify-center items-center min-h-screen box-border bg-background text-text">
+        <Background />
+        {children}
+      </body>
     </html>
   );
 }

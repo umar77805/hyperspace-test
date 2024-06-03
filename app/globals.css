@@ -1,23 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Danfo&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --background: #070612;
+  --text: #DFDFF4;
+  --primary: #908DD9;
+  --secondary: #7C2A2C;
+  --accent: #BF9E42;
+  --linear-grad: linear-gradient(-45deg, #070612, #DFDFF4, #7C2A2C, #BF9E42 );
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
+@layer utilities {
+
+  .circleBefore {
+      clip-path: circle(15% at 30% 20%);
   }
+  .circleAfter {
+      clip-path: circle(20% at 70% 80%);
+  }
+  .newCircleBefore {
+      clip-path: circle(5% at 30% 20%);
+  }
+  .newCircleAfter {
+      clip-path: circle(10% at 70% 80%);
+  }
+
 }
 
-*{
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  padding: 1rem;
-}
