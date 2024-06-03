@@ -18,8 +18,8 @@ const Second = () => {
         <Link href="/first" className="w-2/5 h-auto">
           <CardContainer>First Page</CardContainer>
         </Link>
-        <Link href="/second" className="w-2/5 h-auto">
-          <CardContainer>Second Page</CardContainer>
+        <Link href="/home" className="w-2/5 h-auto">
+          <CardContainer>Home Page</CardContainer>
         </Link>
       </div>
     </div>
